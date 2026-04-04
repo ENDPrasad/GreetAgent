@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Greeting Agent</title>
+  </head>
+  <body>
+    <h1 id="greeting">Loading...</h1>
+
+    <script>
+      async function loadGreeting() {
+        const response = await fetch("http://127.0.0.1:8000/greet?name=Prasad");
+        const data = await response.json();
+        document.getElementById("greeting").innerText = data.message;
+      }
+
+      loadGreeting();
+    </script>
+  </body>
+</html>
