@@ -8,7 +8,7 @@
 
     <script>
       async function loadGreeting() {
-        const response = await fetch("http://127.0.0.1:8000/greet?name=Prasad");
+        const response = await fetch("http://127.0.0.1:8000/greet?name=END");
         const data = await response.json();
         document.getElementById("greeting").innerText = data.message;
       }
