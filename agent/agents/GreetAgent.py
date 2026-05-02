@@ -9,4 +9,4 @@ class GreetingAgent:
         elif hour < 18:
             return f"Good afternoon, {name}!"
         else:
-            return f"Good evening, {name}!"
+            return f"Good night, {name}!"
